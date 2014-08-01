@@ -13,14 +13,8 @@
 
 Route::get('/', function()
 {
-
-
-	//$view = View::make('home.index');
-	//$view -> greeting = "Hi";
-	//return $view;
-	
-	return View::make('home.index');
-
-
+	return View::make('hello');
 });
 
+
+Route::resource('profiles', 'ProfilesController');
